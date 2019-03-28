@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  width: fit-content;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h1 > small {
+  display: block;
+  font-size: 1rem;
+}
+
+@keyframes pulse {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.container > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+
+  animation: pulse 1s linear 5 alternate;
+}
+
+.arrow-button .icon {
+  width: 30px;
+}
