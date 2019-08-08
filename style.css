@@ -1,36 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
+  height: 100%;
+  background-color: #222;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizelegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 0;
+  height: 100%;
   width: 100%;
-  height: 100vh;
-  background: radial-gradient(#353c44, #222931);
-  color: #fff;
-  font-family: sans-serif;
+  max-width: 16rem;
+  margin: 0 auto;
 }
 
 .avatar {
-  width: 200px;
-  border-radius: 50%;
+  max-width: 100%;
 }
 
 .description {
+  margin-top: 2rem;
   text-align: center;
 }
 
+.description h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.description p {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
 .social a {
-  display: inline-block;
-  border: 1px solid #fff;
-  padding: 1rem;
-  border-radius: 50%;
+  color: #444;
+  text-decoration: none;
+  height: 2rem;
 }
 
-.social a:first-child {
-  margin-right: 1rem;
+.social a:hover {
+  color: #888;
 }
 
-.social path {
-  fill: #fff;
+svg {
+  width: 2rem;
+  height: 2rem;
 }
